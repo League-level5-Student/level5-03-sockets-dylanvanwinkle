@@ -50,7 +50,7 @@ public class ServerGreeter extends Thread {
 			DataInputStream dis = new DataInputStream(socket.getInputStream());
 			// 12. Print the message from the DataInputStream object using the readUTF()
 			// method
-			dis.readUTF();
+			System.out.println(dis.readUTF());
 			// 13. Create a DataOutputStream object. When initializing it, use the Server
 			// object you created in step 9 to call the getOutputStream() method.
 			DataOutputStream dos = new DataOutputStream(socket.getOutputStream());
